@@ -41,6 +41,12 @@ flutter:
   uses-material-design: true
   assets:
     - flutterlogo.png
+    - all.png
+    - jobstreet.jpg
+    - linkedinicon.png
+    - indeed.jpg
+    - ironman.jpg
+    - defaulticon.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
