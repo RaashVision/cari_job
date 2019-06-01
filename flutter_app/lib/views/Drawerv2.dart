@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/views/DetailScreenWPageView.dart';
 import 'package:flutter_app/views/job_list.dart';
 import 'package:flutter_app/views/top_tabbed_view.dart';
 
@@ -11,8 +12,8 @@ class DrawerItem {
 class HomePage extends StatefulWidget {
   final drawerItems = [
     new DrawerItem("Job Apply", Icons.add),
-    new DrawerItem("Fragment 2", Icons.local_pizza),
-    new DrawerItem("Fragment 3", Icons.info)
+    new DrawerItem("⚡ Job Detail", Icons.book),
+    new DrawerItem("About", Icons.message)
   ];
 
   @override
@@ -29,7 +30,7 @@ class HomePageState extends State<HomePage> {
       case 0:
         return new TabBarCariKerja();
       case 1:
-        return new ListPage();
+        return new DetailScreenWPageView();
 //      case 2:
 //        return new ThirdFragment();
 
