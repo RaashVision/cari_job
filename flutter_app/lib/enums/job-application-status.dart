@@ -1,0 +1,1 @@
+enum JobApplicationStatus{ InProgress, Rejected, Successful }
