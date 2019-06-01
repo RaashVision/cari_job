@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/job-card-view.dart';
+import 'package:flutter_app/views/job-card-view.dart';
 
 class TabBarCariKerja extends StatefulWidget {
   @override

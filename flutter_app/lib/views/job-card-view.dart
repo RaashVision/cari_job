@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/enums/job-application-status.dart';
 import 'package:flutter_app/models/job-application.dart';
 
-import 'enums/job-application-source.dart';
+import 'package:flutter_app/enums/job-application-source.dart';
+import 'package:flutter_app/views/DetailScreenWPageView.dart';
 
 class JobCardView extends StatefulWidget {
   JobCardView({Key key, this.source = JobApplicationSource.all})
@@ -49,7 +50,13 @@ class _JobCardViewState extends State<JobCardView> {
           itemCount: _jobApplicationItems.length,
           itemBuilder: (context, index) {
             return InkWell(
-              onTap: () => {},
+              onTap: () => {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DetailScreenWPageView()),
+                    )
+                  },
               child: Card(
                 margin: EdgeInsets.all(3.0),
                 child: Column(
